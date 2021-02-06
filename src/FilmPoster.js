@@ -6,17 +6,7 @@ class FilmPoster extends Component {
     render() {
         
         return (
-            
-             
-            
-            <ul>
-            {this.props.films.map((film, i) => {
-                return <div className="film-row"> 
-                <h1> <img src={film.poster_path} /></h1> 
-                </div>
-            })}
-            </ul>
-            
+            <img src={this.props.posterUrl} alt={this.props.title} />
         )
     }
 }

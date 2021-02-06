@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FilmPoster from './FilmPoster'
 import FilmListings from './FilmListing'
+import FilmDetails from './FilmDetails'
 import './index.css';
 import TMDB from './TMDB';
 
@@ -10,12 +11,7 @@ class App extends Component {
       <div className="film-library">
         <FilmListings films={TMDB.films}/>
 
-        <div className="film-details">
-          <h1 className="section-title">DETAILS</h1>
-          <ul>
-          {/* <FilmDetails films={TMDB.films} /> */}
-          </ul>
-        </div>
+        <FilmDetails films={TMDB.films} />
       </div>
     );
   }
