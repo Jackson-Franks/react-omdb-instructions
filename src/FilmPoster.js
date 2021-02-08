@@ -7,6 +7,7 @@ class FilmPoster extends Component {
         
         return (
             <img src={this.props.posterUrl} alt={this.props.title} />
+            
         )
     }
 }
